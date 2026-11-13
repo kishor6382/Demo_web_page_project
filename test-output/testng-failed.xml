@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="testNgs.JewelTest">
+        <methods>
+          <include name="diamHeart"/>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+          <include name="ownJewl"/>
+        </methods>
+      </class> <!-- testNgs.JewelTest -->
+      <class name="testNgs.DeskTest">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="ownComputer"/>
+          <include name="afterClass"/>
+          <include name="afterMethod"/>
+          <include name="expensiveComputer"/>
+          <include name="beforeMethod"/>
+          <include name="simpleComputer"/>
+        </methods>
+      </class> <!-- testNgs.DeskTest -->
+      <class name="testNgs.BookTest">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+          <include name="fictionBook"/>
+          <include name="afterMethod"/>
+          <include name="healthBook"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- testNgs.BookTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

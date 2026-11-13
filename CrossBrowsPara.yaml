@@ -1,0 +1,23 @@
+name: Suite
+threadCount: 3
+parallel: tests
+configFailurePolicy: skip
+tests:
+  - name: Test1
+  parallel: tests
+  parameters: { browser: chrome }
+  classes:
+    - testNgs.JewelTest
+
+  - name: Test2
+  parallel: tests
+  parameters: { browser: edge }
+  classes:
+    - testNgs.JewelTest
+
+  - name: Test3
+  parallel: tests
+  parameters: { browser: firefox }
+  classes:
+    - testNgs.JewelTest
+
